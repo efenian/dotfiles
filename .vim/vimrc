@@ -6,6 +6,9 @@ set t_Co=256
 set background=dark
 if has("termguicolors")
     set termguicolors
+    if $TERM == "screen-256color"
+      set notermguicolors
+    endif
 endif
 " }}}
 " Misc {{{
